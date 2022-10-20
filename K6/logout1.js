@@ -10,6 +10,6 @@ export const options = {
 };  
 
 export default function () {
-  http.get('http://127.0.0.1:8000/');
+  http.get('http://127.0.0.1:8000/logout');
   sleep(1);
 }

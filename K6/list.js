@@ -1,8 +1,7 @@
-import { check } from 'k6';
 import http from 'k6/http';
+import { sleep } from 'k6';
+
 export default function () {
-  let res = http.get('http://127.0.0.1:8000/user-management/user');
-  check(res, {
-    'body contains text': (r) => r.body.includes('Collection of simple web-pages suitable for load testing.'),
-  });
+  http.get('http://127.0.0.1:8000/user-management/user');
+  sleep(1);
 }
