@@ -4,12 +4,6 @@ describe('empty spec', () => {
     cy.get(':nth-child(2) > .form-control').type('superadmin@gmail.com')
     cy.get(':nth-child(3) > .form-control').type('password')
     cy.get('.btn').click()
-    cy.visit('http://127.0.0.1:8000/menu-management/menu-item')
-    cy.get('.card-header-action > .btn-icon').click()
-    
-    cy.get('#name').type('Menu Item')
-    cy.get('#permission_name').type('menu-item.index')
-
-    cy.get('.btn-primary').click()
+    cy.visit('http://127.0.0.1:8000/user-management/user')
   })
 })

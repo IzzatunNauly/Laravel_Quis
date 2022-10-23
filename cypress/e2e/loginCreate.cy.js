@@ -10,6 +10,5 @@ describe('empty spec', () => {
     cy.get('#email').type('nauly@gmail.com')
     cy.get('#password').type('12345')
     cy.get('.btn-primary').click()
-    
   })
 })
